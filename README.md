@@ -27,7 +27,7 @@ ng serve and go to http://localhost:4200/
 
 <p align="center">
     <a>
-        <img src="./src/assets/images/mflix.png" alt="FlixMovies" />
+        <img src="./src/assets/images/mflix.png" alt="MFlixMovies" />
     </a>
 </p>
 

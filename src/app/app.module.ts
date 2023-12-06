@@ -13,6 +13,7 @@ import {HttpClientModule} from '@angular/common/http'
 import { PipeModule } from './pipe/pipe.module';
 import {CarouselModule} from 'primeng/carousel'
 import { SkeletonModule } from './shared/skeleton/skeleton.module';
+import { MoviesComponent } from './components/movies/movies.component';
 
 
 @NgModule({

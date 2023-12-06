@@ -3,10 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 
 
+
 const routes: Routes = [
   {
     path: '',
     component:HomeComponent,
+  },
+  {
+    path:'movies',
+    loadChildren: ()=> import('./components/movies/movies.module').then(m=> m.MoviesModule)
   }
 ];
 
