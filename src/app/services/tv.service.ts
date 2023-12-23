@@ -23,4 +23,10 @@ export class TvService {
    getTvOnTheAir(page: number): Observable<any>{
     return this.http.get(`${this.baseUrl}tv/on_the_air?api_key=${this.apiKey}&page=${page}&language=${this.language}`)
    }
+  getTopRatedTvShows(page: number): Observable<any> {
+     return this.http.get(`${this.baseUrl}tv/top_rated?api_key=${this.apiKey}&page=${page}&language=${this.language}`)
+  }
+  searchTv(searchStr: string): Observable<any> {
+    return this.http.get(`${this.baseUrl}search/tv?api_key=${this.apiKey}&query=${searchStr}`)
+  }
 }
