@@ -24,7 +24,10 @@ export class MoviesService {
     getTopRatedMovies =(page:number): Observable <any>=>{
       return this.http.get(`${this.baseUrl}movie/top_rated?api_key=${this.apiKey}&page=${page}&language=${this.language}&region=${this.region}`)
     }
-    searchMovies =(searchStr: string)=>{
+    searchMovies =(searchStr: string):Observable<any>=>{
       return this.http.get(`${this.baseUrl}search/movie?api_key=${this.apiKey}&query=${searchStr}`)
     }
+  getGenres = ():Observable<any> => {
+    return this.http.get(`${this.baseUrl}genre/movie/list?api_key=${this.apiKey}&language=${this.language}`)
+  }
 }
